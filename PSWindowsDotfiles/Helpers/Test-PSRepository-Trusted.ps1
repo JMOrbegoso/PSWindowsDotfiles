@@ -1,4 +1,4 @@
-function Get-PSRepository-Trusted-Status {
+function Test-PSRepository-Trusted {
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

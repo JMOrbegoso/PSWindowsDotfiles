@@ -1,4 +1,4 @@
-function Get-WindowsFeature-Installation-Status {
+function Test-WindowsFeature-Installation {
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

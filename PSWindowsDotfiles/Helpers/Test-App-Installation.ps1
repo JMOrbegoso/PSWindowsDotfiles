@@ -1,4 +1,4 @@
-function Get-App-Installation-Status {
+function Test-App-Installation {
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

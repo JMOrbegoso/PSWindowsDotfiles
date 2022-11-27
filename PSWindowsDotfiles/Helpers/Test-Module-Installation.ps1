@@ -1,5 +1,5 @@
 # Return TRUE if the Module is installed and it version is higher than the ModuleMinimumVersion
-function Get-Module-Installation-Status {
+function Test-Module-Installation {
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

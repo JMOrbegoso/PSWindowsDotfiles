@@ -1,4 +1,4 @@
-function Get-Dotnet-Tool-Installation-Status {
+function Test-Dotnet-Tool-Installation {
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

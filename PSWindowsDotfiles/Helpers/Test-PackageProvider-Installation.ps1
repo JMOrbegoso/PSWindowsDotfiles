@@ -1,4 +1,4 @@
-function Get-PackageProvider-Installation-Status {
+function Test-PackageProvider-Installation {
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]
