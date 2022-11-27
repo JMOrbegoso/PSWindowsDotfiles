@@ -28,6 +28,11 @@ function Invoke-Dotfiles-Install {
   )
   
   Process {
+    # Check if the host is Windows Terminal
+    if (Test-Running-On-WindowsTerminal) {
+      throw "Do not run the command in Windows Terminal";
+    }
+
     # Set the DOTFILES_PATH environment variable
     $env:DOTFILES_PATH = "$Path";
 
