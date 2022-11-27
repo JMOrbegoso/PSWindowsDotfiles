@@ -9,25 +9,25 @@
 @{
 
   # Script module or binary module file associated with this manifest.
-  RootModule        = 'PSWindowsDotfiles.psm1'
+  RootModule    = 'PSWindowsDotfiles.psm1'
 
   # Version number of this module.
-  ModuleVersion     = '1.0.0'
+  ModuleVersion = '1.0.0'
 
   # Supported PSEditions
   # CompatiblePSEditions = @()
 
   # ID used to uniquely identify this module
-  GUID              = 'b393baa1-52b4-4ec0-9124-07083fab7aa5'
+  GUID          = 'b393baa1-52b4-4ec0-9124-07083fab7aa5'
 
   # Author of this module
-  Author            = 'JMOrbegoso'
+  Author        = 'JMOrbegoso'
 
   # Copyright statement for this module
-  Copyright         = '(c) 2022 JMOrbegoso. All rights reserved.'
+  Copyright     = '(c) 2022 JMOrbegoso. All rights reserved.'
 
   # Description of the functionality provided by this module
-  Description       = 'A PowerShell module to create and install Dotfiles repositories for Microsoft Windows.'
+  Description   = 'A PowerShell module to create and install Dotfiles repositories for Microsoft Windows.'
 
   # Minimum version of the Windows PowerShell engine required by this module
   # PowerShellVersion = ''
@@ -66,10 +66,7 @@
   # NestedModules = @()
 
   # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-  FunctionsToExport = @(
-    "Invoke-Dotfiles-Create",
-    "Invoke-Dotfiles-Install"
-  )
+  # FunctionsToExport = @()
 
   # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
   # CmdletsToExport = @()
@@ -90,7 +87,7 @@
   # FileList = @()
 
   # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-  PrivateData       = @{
+  PrivateData   = @{
 
     PSData = @{
 
@@ -114,7 +111,7 @@
   } # End of PrivateData hashtable
 
   # HelpInfo URI of this module
-  HelpInfoURI       = 'https://github.com/JMOrbegoso/PSWindowsDotfiles'
+  HelpInfoURI   = 'https://github.com/JMOrbegoso/PSWindowsDotfiles'
 
   # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
   # DefaultCommandPrefix = ''
