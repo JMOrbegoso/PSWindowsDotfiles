@@ -1,5 +1,4 @@
 function Enable-WindowsFeature {
-  [CmdletBinding()]
   param (
     [Parameter(Mandatory = $TRUE)]
     [String]

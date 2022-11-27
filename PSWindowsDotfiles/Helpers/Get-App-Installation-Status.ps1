@@ -1,5 +1,4 @@
 function Get-App-Installation-Status {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

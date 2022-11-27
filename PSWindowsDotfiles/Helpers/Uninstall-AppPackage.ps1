@@ -1,5 +1,4 @@
 function Uninstall-AppPackage {
-  [CmdletBinding()]
   param (
     [Parameter(Mandatory = $TRUE)]
     [String]

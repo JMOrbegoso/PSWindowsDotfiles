@@ -1,5 +1,4 @@
 function Get-WindowsFeature-Installation-Status {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

@@ -1,5 +1,4 @@
 function Pin-To-Windows-Explorer-QuickAccess {
-  [CmdletBinding()]
   param (
     [Parameter( Mandatory = $TRUE)]
     [String]

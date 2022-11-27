@@ -1,5 +1,4 @@
 function Update-User-Wallpaper {
-  [CmdletBinding()]
   param (
     [Parameter( Mandatory = $TRUE)]
     [String]

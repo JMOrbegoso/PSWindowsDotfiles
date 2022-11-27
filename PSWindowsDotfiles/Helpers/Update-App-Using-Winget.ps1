@@ -1,5 +1,4 @@
 function Update-App-Using-Winget {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

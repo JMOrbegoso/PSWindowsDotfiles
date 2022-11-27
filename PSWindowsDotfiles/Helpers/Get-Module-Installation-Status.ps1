@@ -1,6 +1,5 @@
 # Return TRUE if the Module is installed and it version is higher than the ModuleMinimumVersion
 function Get-Module-Installation-Status {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

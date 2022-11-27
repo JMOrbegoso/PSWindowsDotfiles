@@ -1,5 +1,4 @@
 function Get-Last-GitHub-Release-Url {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

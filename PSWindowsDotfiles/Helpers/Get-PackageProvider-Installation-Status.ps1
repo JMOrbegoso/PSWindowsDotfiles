@@ -1,5 +1,4 @@
 function Get-PackageProvider-Installation-Status {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

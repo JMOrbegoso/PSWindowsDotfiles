@@ -1,5 +1,4 @@
 function Get-Dotnet-Tool-Installation-Status {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

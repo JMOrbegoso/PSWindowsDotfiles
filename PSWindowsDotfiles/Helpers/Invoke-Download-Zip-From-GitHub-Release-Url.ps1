@@ -1,5 +1,4 @@
 function Invoke-Download-Zip-From-GitHub-Release-Url {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

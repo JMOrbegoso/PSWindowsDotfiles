@@ -1,5 +1,4 @@
 function Test-PathRegistryKey {
-  [CmdletBinding()]
   param (
     [Parameter(Mandatory = $TRUE)]
     [String]

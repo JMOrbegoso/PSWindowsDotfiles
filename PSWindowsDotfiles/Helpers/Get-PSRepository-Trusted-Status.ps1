@@ -1,5 +1,4 @@
 function Get-PSRepository-Trusted-Status {
-  [CmdletBinding()]
   param(
     [Parameter(Mandatory = $TRUE)]
     [string]

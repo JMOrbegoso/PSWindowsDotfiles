@@ -1,5 +1,4 @@
 function Disable-WindowsFeature {
-  [CmdletBinding()]
   param (
     [Parameter(Mandatory = $TRUE)]
     [String]
