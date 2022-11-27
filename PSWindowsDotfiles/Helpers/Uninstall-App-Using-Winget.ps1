@@ -1,7 +1,8 @@
 function Uninstall-App-Using-Winget {
+  [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $AppId
   )
 

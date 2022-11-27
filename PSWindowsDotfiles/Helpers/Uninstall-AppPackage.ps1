@@ -1,5 +1,6 @@
 function Uninstall-AppPackage {
-  param (
+  [OutputType([System.Void])]
+  param(
     [Parameter(Mandatory = $TRUE)]
     [String]
     $Name

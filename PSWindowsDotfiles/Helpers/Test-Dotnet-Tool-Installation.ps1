@@ -1,7 +1,8 @@
 function Test-Dotnet-Tool-Installation {
+  [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $DotnetToolName
   )
 

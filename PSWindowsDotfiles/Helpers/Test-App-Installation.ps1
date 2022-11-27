@@ -1,7 +1,8 @@
 function Test-App-Installation {
+  [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $AppId
   )
 

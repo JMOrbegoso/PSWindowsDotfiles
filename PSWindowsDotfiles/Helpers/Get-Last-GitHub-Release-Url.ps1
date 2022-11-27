@@ -1,11 +1,12 @@
 function Get-Last-GitHub-Release-Url {
+  [OutputType([String])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $GitHubRepository,
 
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $FilenamePattern
   )
 

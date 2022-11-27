@@ -1,5 +1,6 @@
 function Pin-To-Windows-Explorer-QuickAccess {
-  param (
+  [OutputType([System.Void])]
+  param(
     [Parameter( Mandatory = $TRUE)]
     [String]
     $Path

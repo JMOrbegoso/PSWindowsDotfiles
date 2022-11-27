@@ -1,7 +1,8 @@
 function Test-WindowsFeature-Installation {
+  [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $FeatureKey
   )
 

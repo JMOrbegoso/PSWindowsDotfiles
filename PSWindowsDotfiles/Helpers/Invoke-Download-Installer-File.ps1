@@ -1,12 +1,13 @@
 # Download installer (exe) file and store it on the dotfiles temp folder
 function Invoke-Download-Installer-File {
+  [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $DownloadUrl,
 
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $InstallerName
   )
 

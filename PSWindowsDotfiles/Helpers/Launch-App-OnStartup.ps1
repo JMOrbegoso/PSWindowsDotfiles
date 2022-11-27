@@ -1,4 +1,5 @@
 function Launch-App-OnStartup {
+  [OutputType([System.Void])]
   param(
     [Parameter(Mandatory)]
     [String]

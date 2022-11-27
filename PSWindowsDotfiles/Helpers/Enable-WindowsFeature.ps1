@@ -1,5 +1,6 @@
 function Enable-WindowsFeature {
-  param (
+  [OutputType([System.Void])]
+  param(
     [Parameter(Mandatory = $TRUE)]
     [String]
     $FeatureKey,

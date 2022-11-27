@@ -1,7 +1,8 @@
 function Test-PackageProvider-Installation {
+  [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $PackageProviderName
   )
 

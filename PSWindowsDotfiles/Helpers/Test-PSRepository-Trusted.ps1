@@ -1,7 +1,8 @@
 function Test-PSRepository-Trusted {
+  [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $PSRepositoryName
   )
 

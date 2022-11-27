@@ -1,10 +1,11 @@
 function Update-User-Wallpaper {
-  param (
-    [Parameter( Mandatory = $TRUE)]
+  [OutputType([System.Void])]
+  param(
+    [Parameter(Mandatory = $TRUE)]
     [String]
     $Path,
 
-    [Parameter( Mandatory = $FALSE)]
+    [Parameter(Mandatory = $FALSE)]
     [ValidateSet('Fill', 'Fit', 'Stretch', 'Tile', 'Center', 'Span')]
     [String]
     $Style = "Fill"
@@ -12,10 +13,10 @@ function Update-User-Wallpaper {
   
   $WallpaperStyle = Switch ($Style) {
     "Tile" { "0" }
-    "Center" { "0" }    
+    "Center" { "0" }
     "Stretch" { "2" }
     "Fit" { "6" }
-    "Fill" { "10" }    
+    "Fill" { "10" }
     "Span" { "22" }
   }
 

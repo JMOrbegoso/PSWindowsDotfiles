@@ -1,5 +1,6 @@
 function Test-PathRegistryKey {
-  param (
+  [OutputType([Boolean])]
+  param(
     [Parameter(Mandatory = $TRUE)]
     [String]
     $Path,

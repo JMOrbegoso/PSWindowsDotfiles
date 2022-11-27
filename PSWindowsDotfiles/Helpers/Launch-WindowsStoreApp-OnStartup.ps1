@@ -15,6 +15,7 @@
   Launch-WindowsStoreApp-OnStartup -Name "Battery Percentage Icon" -Aumid "61867SoleonInnovation.BatteryPercentageIcon_d1gx98zh1khh8!App"
 #>
 function Launch-WindowsStoreApp-OnStartup {
+  [OutputType([System.Void])]
   param(
     [Parameter(Mandatory)]
     [String]

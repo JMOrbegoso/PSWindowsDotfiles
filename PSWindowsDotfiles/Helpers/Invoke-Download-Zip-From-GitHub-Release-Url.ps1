@@ -1,11 +1,12 @@
 function Invoke-Download-Zip-From-GitHub-Release-Url {
+  [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $GitHubDirectDownloadUrl,
 
     [Parameter(Mandatory = $TRUE)]
-    [string]
+    [String]
     $DestinationDirectory
   )
 
