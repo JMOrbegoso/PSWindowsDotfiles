@@ -33,6 +33,11 @@ function Invoke-Dotfiles-Install {
       throw "Do not run the command in Windows Terminal";
     }
 
+    # Check if is admin
+    if (-Not (Test-Current-User-Is-Admin)) {
+      throw "Run the command as Admin";
+    }
+
     # Set the DOTFILES_PATH environment variable
     $env:DOTFILES_PATH = "$Path";
 
