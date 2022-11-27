@@ -10,7 +10,7 @@ function Enable-WindowsFeature {
     $FeatureName
   )
 
-  if (-not (Get-WindowsFeature-Installation-Status -FeatureKey $FeatureKey)) {
+  if (-not (Test-WindowsFeature-Installation -FeatureKey $FeatureKey)) {
     Write-Host "Enabling" $FeatureName ":" -ForegroundColor "Green";
     Enable-WindowsOptionalFeature -FeatureName $FeatureKey -Online -All -NoRestart;
   }
