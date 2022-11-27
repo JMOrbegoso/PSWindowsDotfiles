@@ -5,5 +5,5 @@ Get-ChildItem "$PSScriptRoot\Helpers" -Filter *.ps1 | Foreach-Object { . $_.Full
 Get-ChildItem "$PSScriptRoot\Functions" -Filter *.ps1 | Foreach-Object { . $_.FullName; }
 
 # Export functions
-Export-ModuleMember "Invoke-Dotfiles-Create";
+Export-ModuleMember "New-Dotfiles";
 Export-ModuleMember "Install-Dotfiles";

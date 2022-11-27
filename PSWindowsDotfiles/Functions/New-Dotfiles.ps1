@@ -12,13 +12,13 @@
   Initialize a Git repository in the directory.
 
   .Example
-  Invoke-Dotfiles-Create -Path "%USERPROFILE%";
+  New-Dotfiles -Path "%USERPROFILE%";
 
   .Example
-  Invoke-Dotfiles-Create -Path "%USERPROFILE%" -Git;
+  New-Dotfiles -Path "%USERPROFILE%" -Git;
  .
 #>
-function Invoke-Dotfiles-Create {
+function New-Dotfiles {
   param(
     [Parameter(Mandatory)]
     [ValidateScript({
