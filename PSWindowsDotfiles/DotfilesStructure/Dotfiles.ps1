@@ -1,3 +1,6 @@
+# Load Helpers
+Get-ChildItem "$env:DOTFILES_PATH\Helpers" -Filter *.ps1 | Foreach-Object { . $_.FullName; }
+
 # Install & configure base apps
 Invoke-Expression "$env:DOTFILES_PATH\Base\Base.ps1";
 
