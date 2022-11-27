@@ -9,9 +9,9 @@
   Path of the Dotfiles project.
 
   .Example
-  Invoke-Dotfiles-Install -Path "%USERPROFILE%\Dotfiles";
+  Install-Dotfiles -Path "%USERPROFILE%\Dotfiles";
 #>
-function Invoke-Dotfiles-Install {
+function Install-Dotfiles {
   param(
     [Parameter(Mandatory)]
     [ValidateScript({
