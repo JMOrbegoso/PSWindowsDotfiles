@@ -49,9 +49,6 @@ function New-Dotfiles {
     Copy-Item -Path "$PSScriptRoot\..\DotfilesStructure\*" -Destination "$Path\Dotfiles" -Recurse;
 
     if ($Git.IsPresent) {
-      # Copy .gitignore
-      Copy-Item -Path "$PSScriptRoot\..\GitFiles\.gitignore" -Destination "$Path\Dotfiles\.gitignore";
-
       # Init Git repo on the Dotfiles folder
       git init "$Path\Dotfiles";
 
