@@ -1,4 +1,4 @@
-function Pin-To-Windows-Explorer-QuickAccess {
+function Register-ExplorerQuickAccess {
   [OutputType([System.Void])]
   param(
     [Parameter( Mandatory = $TRUE)]

@@ -1,4 +1,4 @@
-function Test-Dotnet-Tool-Installation {
+function Test-DotnetTool {
   [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]

@@ -1,4 +1,4 @@
-function Update-App-Using-Winget {
+function Update-WingetApp {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]

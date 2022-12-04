@@ -1,5 +1,5 @@
 # Return TRUE if the Module is installed and it version is higher than the ModuleMinimumVersion
-function Test-Module-Installation {
+function Test-PSModule {
   [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]

@@ -1,4 +1,4 @@
-function Test-Running-On-WindowsTerminal {
+function Test-WindowsTerminal {
   [OutputType([Boolean])]
   param()
 

@@ -10,7 +10,7 @@ function Disable-WindowsFeature {
     $FeatureName
   )
   
-  if (Test-WindowsFeature-Installation -FeatureKey $FeatureKey) {
+  if (Test-WindowsFeature -FeatureKey $FeatureKey) {
     Write-Host "Disabling" $FeatureName ":" -ForegroundColor "Green";
     Disable-WindowsOptionalFeature -FeatureName $FeatureKey -Online -NoRestart;
   }

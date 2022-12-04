@@ -29,12 +29,12 @@ function Install-Dotfiles {
   
   Process {
     # Check if the host is Windows Terminal
-    if (Test-Running-On-WindowsTerminal) {
+    if (Test-WindowsTerminal) {
       throw "Do not run the command in Windows Terminal";
     }
 
     # Check if is admin
-    if (-Not (Test-Current-User-Is-Admin)) {
+    if (-Not (Test-Admin)) {
       throw "Run the command as Admin";
     }
 

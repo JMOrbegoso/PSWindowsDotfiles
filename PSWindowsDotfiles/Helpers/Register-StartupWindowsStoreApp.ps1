@@ -9,12 +9,12 @@
   Application User Model ID.
 
  .Example
-  Launch-WindowsStoreApp-OnStartup -Name "Sticky Notes" -Aumid "Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App"
+  Register-StartupWindowsStoreApp -Name "Sticky Notes" -Aumid "Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App"
 
  .Example
-  Launch-WindowsStoreApp-OnStartup -Name "Battery Percentage Icon" -Aumid "61867SoleonInnovation.BatteryPercentageIcon_d1gx98zh1khh8!App"
+  Register-StartupWindowsStoreApp -Name "Battery Percentage Icon" -Aumid "61867SoleonInnovation.BatteryPercentageIcon_d1gx98zh1khh8!App"
 #>
-function Launch-WindowsStoreApp-OnStartup {
+function Register-StartupWindowsStoreApp {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory)]

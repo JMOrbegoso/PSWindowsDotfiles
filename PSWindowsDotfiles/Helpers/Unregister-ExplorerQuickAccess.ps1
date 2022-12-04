@@ -1,4 +1,4 @@
-function Unpin-To-Windows-Explorer-QuickAccess {
+function Unregister-ExplorerQuickAccess {
   [OutputType([System.Void])]
   param(
     [Parameter( Mandatory = $TRUE)]

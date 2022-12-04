@@ -1,4 +1,4 @@
-function Test-Current-User-Is-Admin {
+function Test-Admin {
   [OutputType([Boolean])]
   Param()
 

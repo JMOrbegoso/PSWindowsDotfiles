@@ -1,4 +1,4 @@
-function Install-App-Using-Winget {
+function Install-WingetApp {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]

@@ -1,4 +1,4 @@
-function Uninstall-App-Using-Winget {
+function Uninstall-WingetApp {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]

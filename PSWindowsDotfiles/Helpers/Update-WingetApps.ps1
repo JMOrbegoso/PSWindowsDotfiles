@@ -1,4 +1,4 @@
-function Update-All-Apps-Using-Winget {
+function Update-WingetApps {
   [OutputType([System.Void])]
   param()
 

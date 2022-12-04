@@ -1,4 +1,4 @@
-function Uninstall-AppPackage {
+function Uninstall-WindowsStoreApp {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]

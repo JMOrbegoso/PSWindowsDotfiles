@@ -1,4 +1,4 @@
-function Test-App-Installation {
+function Test-WingetApp {
   [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]

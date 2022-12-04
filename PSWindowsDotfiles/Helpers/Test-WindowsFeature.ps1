@@ -1,4 +1,4 @@
-function Test-WindowsFeature-Installation {
+function Test-WindowsFeature {
   [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]

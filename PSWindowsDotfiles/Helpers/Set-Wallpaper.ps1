@@ -1,4 +1,4 @@
-function Update-User-Wallpaper {
+function Set-Wallpaper {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory = $TRUE)]

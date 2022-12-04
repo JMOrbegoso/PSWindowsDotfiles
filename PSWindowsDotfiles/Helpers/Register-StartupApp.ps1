@@ -1,4 +1,4 @@
-function Launch-App-OnStartup {
+function Register-StartupApp {
   [OutputType([System.Void])]
   param(
     [Parameter(Mandatory)]

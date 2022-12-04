@@ -1,4 +1,4 @@
-function Get-Last-GitHub-Release-Url {
+function Get-GitHubReleaseUrl {
   [OutputType([String])]
   param(
     [Parameter(Mandatory = $TRUE)]

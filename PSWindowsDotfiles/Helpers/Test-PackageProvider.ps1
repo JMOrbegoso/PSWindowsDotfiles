@@ -1,4 +1,4 @@
-function Test-PackageProvider-Installation {
+function Test-PackageProvider {
   [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]

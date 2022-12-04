@@ -1,4 +1,4 @@
-function Test-PSRepository-Trusted {
+function Test-PSRepository {
   [OutputType([Boolean])]
   param(
     [Parameter(Mandatory = $TRUE)]

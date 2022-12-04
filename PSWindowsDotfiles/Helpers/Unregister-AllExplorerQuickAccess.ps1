@@ -1,4 +1,4 @@
-function Unpin-All-Windows-Explorer-QuickAccess {
+function Unregister-AllExplorerQuickAccess {
   [OutputType([System.Void])]
   param()
 
