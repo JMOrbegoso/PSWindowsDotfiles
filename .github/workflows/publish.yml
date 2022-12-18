@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Find PSWindowsDotfiles folder
+        run: |
+          echo $PWD
+          ls -la
       - name: Publish
         env:
           NUGET_KEY: ${{ secrets.NUGET_KEY }}
