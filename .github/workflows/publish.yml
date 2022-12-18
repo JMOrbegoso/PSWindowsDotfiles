@@ -6,6 +6,7 @@ on:
       - "main"
     paths:
       - "PSWindowsDotfiles/PSWindowsDotfiles.psd1"
+  workflow_dispatch:
 
 jobs:
   publish-to-gallery:
