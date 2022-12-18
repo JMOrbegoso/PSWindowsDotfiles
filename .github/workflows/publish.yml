@@ -1,0 +1,20 @@
+name: Publish PowerShell Module
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "PSWindowsDotfiles/PSWindowsDotfiles.psd1"
+
+jobs:
+  publish-to-gallery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Publish
+        env:
+          NUGET_KEY: ${{ secrets.NUGET_KEY }}
+        shell: pwsh
+        run: |
+          Publish-Module -Path /tmp/PSWindowsDotfiles/PSWindowsDotfiles -NuGetApiKey $env:NUGET_KEY -Verbose;
