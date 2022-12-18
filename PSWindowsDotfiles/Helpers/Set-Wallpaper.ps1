@@ -20,17 +20,17 @@ function Set-Wallpaper {
     "Span" { "22" }
   }
 
-  if (-not (Test-Path -Path "HKCU:\Control Panel\Desktop\")) {
-    New-Item -Path "HKCU:\Control Panel\" -Name "Desktop";
+  if (-not (Test-Path -Path "HKCU:\Control Panel\Desktop")) {
+    New-Item -Path "HKCU:\Control Panel" -Name "Desktop";
   }
-  if (-not (Test-PathRegistryKey -Path "HKCU:\Control Panel\Desktop\" -Name "WallPaper")) {
-    New-ItemProperty -Path "HKCU:\Control Panel\Desktop\" -Name "WallPaper" -PropertyType "String";
+  if (-not (Test-PathRegistryKey -Path "HKCU:\Control Panel\Desktop" -Name "WallPaper")) {
+    New-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "WallPaper" -PropertyType "String";
   }
-  if (-not (Test-PathRegistryKey -Path "HKCU:\Control Panel\Desktop\" -Name "WallpaperStyle")) {
-    New-ItemProperty -Path "HKCU:\Control Panel\Desktop\" -Name "WallpaperStyle" -PropertyType "String";
+  if (-not (Test-PathRegistryKey -Path "HKCU:\Control Panel\Desktop" -Name "WallpaperStyle")) {
+    New-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "WallpaperStyle" -PropertyType "String";
   }
 
-  Set-ItemProperty -Path "HKCU:\Control Panel\Desktop\" -Name "WallPaper" -Value $Path;
+  Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "WallPaper" -Value $Path;
   Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "WallpaperStyle" -Value $WallpaperStyle;
 
   # Refresh wallpaper
