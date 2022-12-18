@@ -39,7 +39,7 @@ function Install-Dotfiles {
     }
 
     # Set the DOTFILES_PATH environment variable
-    $env:DOTFILES_PATH = "$Path";
+    $env:DOTFILES_PATH = $Path.TrimEnd("\");
 
     # Create a DOTFILES SymbolicLink in USERPROFILE
     New-Item -ItemType "SymbolicLink" -Path "$env:USERPROFILE\.dotfiles" -Target "$env:DOTFILES_PATH" -Force;
