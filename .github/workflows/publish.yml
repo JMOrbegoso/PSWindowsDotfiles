@@ -17,4 +17,12 @@ jobs:
           NUGET_KEY: ${{ secrets.NUGET_KEY }}
         shell: pwsh
         run: |
-          Publish-Module -Path /tmp/PSWindowsDotfiles/PSWindowsDotfiles -NuGetApiKey $env:NUGET_KEY -Verbose;
+          echo $PWD
+          echo "---"
+          echo ${GITHUB_WORKSPACE}
+          echo "---"
+          echo ${GITHUB_WORKSPACE}/PSWindowsDotfiles
+          echo "---"
+          echo ${GITHUB_WORKSPACE}/PSWindowsDotfiles/PSWindowsDotfiles
+          echo "---"
+          Publish-Module -Path PSWindowsDotfiles/PSWindowsDotfiles -NuGetApiKey $env:NUGET_KEY -Verbose;
