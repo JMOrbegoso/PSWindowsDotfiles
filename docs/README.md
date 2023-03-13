@@ -7,19 +7,31 @@
 
 Install it from the [PowerShell Gallery](https://www.powershellgallery.com/packages/PSWindowsDotfiles/):
 
-```PowerShell
-Install-Module -Name PSWindowsDotfiles
+``` PowerShell
+Install-Module -Name "PSWindowsDotfiles" -Repository "PSGallery" -Scope "AllUsers";
 ```
 
 ## 🗺️ Usage
 
-1. Create a new Dotfiles project:
+1. Import PSWindowsDotfiles:
 
    ``` PowerShell
-   New-Dotfiles "~\OneDrive"
+   Import-Module "PSWindowsDotfiles";
    ```
 
-2. Build a super-duper Dotfiles project according to your needs:
+2. May you need to configure the Execution Policy:
+
+   ``` PowerShell
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass;
+   ```
+
+3. Create a new Dotfiles project:
+
+   ``` PowerShell
+   New-Dotfiles "$HOME\OneDrive";
+   ```
+
+4. Build a super-duper Dotfiles project according to your needs:
 
    ```Explorer
    Dotfiles
@@ -46,10 +58,24 @@ Install-Module -Name PSWindowsDotfiles
    └── Dotfiles.ps1
    ```
 
-3. Run a Dotfiles project:
+5. Run it 🚀:
 
    ``` PowerShell
-   Install-Dotfiles "~\OneDrive\Dotfiles"
+   Install-Dotfiles "$HOME\OneDrive\Dotfiles";
+   ```
+
+## 🗺️ Try the example repository before creating your own
+
+1. Clone the repo:
+
+   ``` PowerShell
+   git clone https://github.com/JMOrbegoso/PSWindowsDotfiles-Example.git $HOME\PSWindowsDotfiles-Example;
+   ```
+
+2. Open any Windows PowerShell host console (Except Windows Terminal) with administrator rights and install it:
+
+   ``` PowerShell
+   Install-Dotfiles $HOME\PSWindowsDotfiles-Example;
    ```
 
 ## 👤 Author
