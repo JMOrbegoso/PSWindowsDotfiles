@@ -11,13 +11,24 @@ function Install-WingetApp {
 
     [Parameter(Mandatory = $FALSE)]
     [String]
+    $Version,
+
+    [Parameter(Mandatory = $FALSE)]
+    [String]
     $Parameters
   )
 
+  $Command = "winget install --exact --id $AppId --source $Source";
+
+  if ($Version) {
+    $Command += " --version $Version";
+  }
+
   if ($Parameters) {
-    winget install --exact --id $AppId --source $Source --override $Parameters --accept-package-agreements --accept-source-agreements --silent;
+    $Command += " --override $Parameters";
   }
-  else {
-    winget install --exact --id $AppId --source $Source --accept-package-agreements --accept-source-agreements --silent;
-  }
+
+  $Command += " --accept-package-agreements --accept-source-agreements --silent;";
+
+  Invoke-Expression $Command;
 }
