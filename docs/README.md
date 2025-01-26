@@ -7,7 +7,7 @@
 
 Install it from the [PowerShell Gallery](https://www.powershellgallery.com/packages/PSWindowsDotfiles/):
 
-``` PowerShell
+```PowerShell
 Install-Module -Name "PSWindowsDotfiles" -Repository "PSGallery" -Scope "AllUsers";
 ```
 
@@ -15,19 +15,19 @@ Install-Module -Name "PSWindowsDotfiles" -Repository "PSGallery" -Scope "AllUser
 
 1. Import PSWindowsDotfiles:
 
-   ``` PowerShell
+   ```PowerShell
    Import-Module "PSWindowsDotfiles";
    ```
 
 2. May you need to configure the Execution Policy:
 
-   ``` PowerShell
+   ```PowerShell
    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass;
    ```
 
 3. Create a new Dotfiles project:
 
-   ``` PowerShell
+   ```PowerShell
    New-Dotfiles "$HOME\OneDrive";
    ```
 
@@ -60,7 +60,7 @@ Install-Module -Name "PSWindowsDotfiles" -Repository "PSGallery" -Scope "AllUser
 
 5. Run it 🚀:
 
-   ``` PowerShell
+   ```PowerShell
    Install-Dotfiles "$HOME\OneDrive\Dotfiles";
    ```
 
@@ -68,13 +68,13 @@ Install-Module -Name "PSWindowsDotfiles" -Repository "PSGallery" -Scope "AllUser
 
 1. Clone the repo:
 
-   ``` PowerShell
+   ```PowerShell
    git clone https://github.com/JMOrbegoso/PSWindowsDotfiles-Example.git $HOME\PSWindowsDotfiles-Example;
    ```
 
 2. Open any Windows PowerShell host console (Except Windows Terminal) with administrator rights and install it:
 
-   ``` PowerShell
+   ```PowerShell
    Install-Dotfiles $HOME\PSWindowsDotfiles-Example;
    ```
 
@@ -82,8 +82,8 @@ Install-Module -Name "PSWindowsDotfiles" -Repository "PSGallery" -Scope "AllUser
 
 **JMOrbegoso:**
 
-- Website: [jmorbegoso.com](https://www.jmorbegoso.com)
-- Twitter: [@JMOrbegosoDev](https://twitter.com/JMOrbegosoDev/)
+- Website: [www.jmorbegoso.dev](https://www.jmorbegoso.dev)
+- Blog: [blog.jmorbegoso.dev](https://blog.jmorbegoso.dev)
 - Github: [@JMOrbegoso](https://github.com/JMOrbegoso/)
 - LinkedIn: [@jmorbegosodev](https://www.linkedin.com/in/jmorbegosodev/)
 
